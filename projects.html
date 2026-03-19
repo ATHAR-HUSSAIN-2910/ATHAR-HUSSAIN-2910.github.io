@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Athar Hussain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-brand">
+        <span class="nav-prompt">~$</span>
+        <a href="index.html" class="nav-logo">athar-hussain</a>
+    </div>
+    <ul>
+        <li><a href="index.html">index</a></li>
+        <li><a href="skills.html">skills</a></li>
+        <li><a href="projects.html" class="active">projects</a></li>
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<main>
+<div class="container">
+
+    <!-- PAGE HEADER -->
+    <div class="ph" style="margin-bottom:40px;">
+        <p class="ph-pre"><span class="tp" style="font-family:var(--mono);">$</span> <span class="kw">ls</span> <span class="str">~/projects/</span></p>
+        <h1 class="ph-title">Projects</h1>
+        <p class="ph-sub">Real-world data analysis projects — code, charts, and business insights.</p>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="pj-card" style="margin-bottom:18px;">
+        <div class="pj-top">
+            <div class="pj-meta">
+                <span class="pj-num">project_01</span>
+                <span class="pj-badge">complete</span>
+            </div>
+            <h2 class="pj-title">Sales Analysis<span class="pj-ext">.py</span></h2>
+            <div class="pj-tags">
+                <span class="pj-tag">Python</span>
+                <span class="pj-tag">Pandas</span>
+                <span class="pj-tag">NumPy</span>
+                <span class="pj-tag">Matplotlib</span>
+            </div>
+        </div>
+
+        <div class="pj-body">
+
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># overview</span>
+                <p>End-to-end sales data analysis. The dataset included order details, product information, customer data, and financial metrics like sales, profit, and discounts. Objective: understand overall business performance, identify top products, analyze customer segments, and explore trends over time.</p>
+            </div>
+
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># key_insights</span>
+                <div class="dict-block">
+                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
+                    <span class="di ind"><span class="str">"revenue"</span><span class="pun">:</span>  <span class="str">"Top categories identified by contribution"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"discount"</span><span class="pun">:</span> <span class="str">"High discounts → reduced profitability"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"segments"</span><span class="pun">:</span> <span class="str">"Customer + geographic patterns mapped"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"trends"</span><span class="pun">:</span>   <span class="str">"Time-series analysis for growth opps"</span></span>
+                    <span class="di"><span class="pun">}</span></span>
+                </div>
+            </div>
+
+            <div class="pj-sec">
+                <a href="https://github.com/your-username/your-repo" target="_blank" class="gh-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    view on github →
+                </a>
+            </div>
+
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># visual_analysis</span>
+                <div class="shots">
+                    <div class="shot">
+                        <div class="shot-img-wrap">
+                            <img src="images/sales_trend.png" alt="Sales Trend">
+                        </div>
+                        <div class="shot-cap">
+                            <span class="shot-name">sales_trend.png</span>
+                            <span class="shot-txt">How sales changed over time — growth patterns and seasonal trends.</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap">
+                            <img src="images/discount_vs_profit.png" alt="Discount vs Profit">
+                        </div>
+                        <div class="shot-cap">
+                            <span class="shot-name">discount_profit.png</span>
+                            <span class="shot-txt">Higher discounts consistently lead to lower profitability.</span>
+                        </div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap">
+                            <img src="images/category_sales.png" alt="Category Sales">
+                        </div>
+                        <div class="shot-cap">
+                            <span class="shot-name">category_sales.png</span>
+                            <span class="shot-txt">Sales by category — identifies top-performing segments.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- UPCOMING -->
+    <div class="up-block">
+        <span class="up-lbl"># upcoming_projects</span>
+        <div class="up-row">
+            <span class="ur-n">02</span>
+            <span class="ur-t">project_02<span class="pj-ext">.ipynb</span></span>
+            <span class="ur-s">// in progress</span>
+        </div>
+        <div class="up-row">
+            <span class="ur-n">03</span>
+            <span class="ur-t">project_03<span class="pj-ext">.ipynb</span></span>
+            <span class="ur-s">// coming soon</span>
+        </div>
+        <div class="up-row">
+            <span class="ur-n">04</span>
+            <span class="ur-t">project_04<span class="pj-ext">.ipynb</span></span>
+            <span class="ur-s">// coming soon</span>
+        </div>
+    </div>
+
+</div>
+</main>
+
+<footer>
+    <span><span class="fp">~$</span> athar-hussain</span>
+    <span class="fr">© 2025 · data analyst</span>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('open');
+}
+</script>
+</body>
+</html>
