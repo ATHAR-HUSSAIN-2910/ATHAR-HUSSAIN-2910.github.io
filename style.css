@@ -281,10 +281,11 @@ nav ul li a.active {
 .btn-fill:hover { background:#4A10A0; border-color:#4A10A0; }
 
 .btn-out {
-    background: transparent; color: var(--text-2);
-    border-color: var(--border-s);
+    background: var(--fn);
+    color: #fff;
+    border-color: var(--fn);
 }
-.btn-out:hover { background: var(--bg-2); border-color: var(--border-s); color: var(--text); }
+.btn-out:hover { background: #1440A0; border-color: #1440A0; color: #fff; }
 
 /* ── SECTION HEAD ───────────────────────────────────────── */
 .sh { margin-bottom: 22px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
@@ -704,11 +705,15 @@ footer {
 
     .container { padding: 28px 16px 56px; }
 
+    /* hero: text first, code card below */
     .hero-split {
         grid-template-columns: 1fr;
         gap: 22px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
+    .code-card { display: block; }
     .cc-body   { font-size: 0.76rem; }
     .ln-num    { width: 28px; padding-right: 12px; font-size: 0.68rem; }
 
