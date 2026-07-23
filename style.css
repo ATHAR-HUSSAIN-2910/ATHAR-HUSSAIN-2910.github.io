@@ -646,7 +646,16 @@ nav ul li a.active {
 .pj-meta {
     display:flex; align-items:center; gap:9px; margin-bottom:10px;
 }
-.pj-num { font-size:0.68rem; color:var(--text-dim); letter-spacing:.08em; }
+.pj-num { 
+    font-size:0.85rem; 
+    color:var(--accent); 
+    letter-spacing:.08em;
+    font-weight: 700;
+    background: rgba(91,23,184,0.08);
+    padding: 2px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(91,23,184,0.15);
+}
 .pj-badge {
     font-family:var(--mono); font-size:0.62rem; font-weight:600;
     padding: 2px 8px; border-radius:3px;
@@ -786,42 +795,58 @@ footer {
 @media (max-width: 740px) {
     /* ── NAV: Always visible, no hamburger ── */
     nav {
-        padding: 0 16px;
+        padding: 0 12px;
         flex-wrap: wrap;
         height: auto;
-        min-height: 50px;
+        min-height: 60px;
         gap: 4px;
+        background: rgba(244,242,238,0.98);
+        border-bottom: 2px solid var(--border-s);
     }
     
     nav ul {
         display: flex !important;
-        gap: 0px;
+        gap: 4px;
         width: 100%;
         justify-content: center;
-        padding: 6px 0 8px 0;
+        padding: 8px 0 10px 0;
         border-top: 1px solid var(--border);
         background: rgba(244,242,238,0.98);
         flex-wrap: wrap;
     }
     
     nav ul li a {
-        font-size: 0.7rem;
-        padding: 4px 10px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 8px 18px;
         display: inline-block;
+        border-radius: 6px;
+        letter-spacing: 0.02em;
+    }
+    
+    nav ul li a:hover {
+        background: var(--bg-2);
+    }
+    
+    nav ul li a.active {
+        background: rgba(91,23,184,0.12);
+        border-color: rgba(91,23,184,0.3);
+        font-weight: 700;
     }
     
     .nav-logo {
-        font-size: 0.8rem;
+        font-size: 0.95rem;
+        font-weight: 700;
     }
     
     .nav-prompt {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     
     .nav-brand {
         width: 100%;
         justify-content: center;
-        padding: 6px 0;
+        padding: 8px 0 4px 0;
     }
     
     /* ── Container ── */
@@ -1178,6 +1203,15 @@ footer {
     .ph {
         margin-bottom: 20px !important;
     }
+
+    /* ── Project Number - Mobile Fix ── */
+    .pj-num {
+        font-size: 0.8rem;
+        padding: 3px 14px;
+        font-weight: 700;
+        background: rgba(91,23,184,0.12);
+        border: 1px solid rgba(91,23,184,0.2);
+    }
 }
 
 /* ── TABLET (741px - 1024px) ────────────────────────────── */
@@ -1330,12 +1364,12 @@ footer {
     }
     
     nav ul li a {
-        font-size: 0.62rem;
-        padding: 3px 7px;
+        font-size: 0.85rem;
+        padding: 6px 12px;
     }
     
     .nav-logo {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     
     .shot-img-wrap {
@@ -1345,6 +1379,11 @@ footer {
     
     .shot-img-wrap img {
         max-height: 200px;
+    }
+    
+    .pj-num {
+        font-size: 0.7rem;
+        padding: 2px 10px;
     }
 }
 
