@@ -789,16 +789,16 @@ footer {
 /* ──── MAGICAL RESPONSIVE BREAKPOINTS ──────────────── */
 /* ─══════════════════════════════════════════════════─ */
 
-/* ── MOBILE FIRST (DEFAULT) ────────────────────────────── */
-/* Everything below 740px gets mobile-first styling */
+/* ── MOBILE (max-width: 740px) ──────────────────────────── */
+/* BIGGER NAVIGATION AND PROJECT NUMBERS */
 
 @media (max-width: 740px) {
-    /* ── NAV: Always visible, no hamburger ── */
+    /* ── NAV: ALWAYS VISIBLE, BIGGER ── */
     nav {
         padding: 0 12px;
         flex-wrap: wrap;
         height: auto;
-        min-height: 60px;
+        min-height: 70px;
         gap: 4px;
         background: rgba(244,242,238,0.98);
         border-bottom: 2px solid var(--border-s);
@@ -806,22 +806,23 @@ footer {
     
     nav ul {
         display: flex !important;
-        gap: 4px;
+        gap: 6px;
         width: 100%;
         justify-content: center;
-        padding: 8px 0 10px 0;
+        padding: 10px 0 12px 0;
         border-top: 1px solid var(--border);
         background: rgba(244,242,238,0.98);
         flex-wrap: wrap;
     }
     
     nav ul li a {
-        font-size: 0.95rem;
-        font-weight: 600;
-        padding: 8px 18px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 10px 22px;
         display: inline-block;
-        border-radius: 6px;
-        letter-spacing: 0.02em;
+        border-radius: 8px;
+        letter-spacing: 0.03em;
+        background: rgba(244,242,238,0.5);
     }
     
     nav ul li a:hover {
@@ -829,24 +830,25 @@ footer {
     }
     
     nav ul li a.active {
-        background: rgba(91,23,184,0.12);
-        border-color: rgba(91,23,184,0.3);
-        font-weight: 700;
+        background: rgba(91,23,184,0.15);
+        border-color: rgba(91,23,184,0.4);
+        font-weight: 800;
+        color: var(--accent);
     }
     
     .nav-logo {
-        font-size: 0.95rem;
-        font-weight: 700;
+        font-size: 1.1rem;
+        font-weight: 800;
     }
     
     .nav-prompt {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .nav-brand {
         width: 100%;
         justify-content: center;
-        padding: 8px 0 4px 0;
+        padding: 10px 0 6px 0;
     }
     
     /* ── Container ── */
@@ -1204,13 +1206,16 @@ footer {
         margin-bottom: 20px !important;
     }
 
-    /* ── Project Number - Mobile Fix ── */
+    /* ── PROJECT NUMBER - BIGGER ON MOBILE ── */
     .pj-num {
-        font-size: 0.8rem;
-        padding: 3px 14px;
-        font-weight: 700;
-        background: rgba(91,23,184,0.12);
-        border: 1px solid rgba(91,23,184,0.2);
+        font-size: 1.1rem !important;
+        font-weight: 800 !important;
+        padding: 4px 18px !important;
+        background: rgba(91,23,184,0.15) !important;
+        border: 2px solid rgba(91,23,184,0.25) !important;
+        border-radius: 6px !important;
+        color: var(--accent) !important;
+        letter-spacing: 0.05em !important;
     }
 }
 
@@ -1364,12 +1369,12 @@ footer {
     }
     
     nav ul li a {
-        font-size: 0.85rem;
-        padding: 6px 12px;
+        font-size: 1rem;
+        padding: 8px 14px;
     }
     
     .nav-logo {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .shot-img-wrap {
@@ -1382,8 +1387,8 @@ footer {
     }
     
     .pj-num {
-        font-size: 0.7rem;
-        padding: 2px 10px;
+        font-size: 1rem !important;
+        padding: 3px 14px !important;
     }
 }
 
