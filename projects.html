@@ -33,16 +33,216 @@
     <div class="ph" style="margin-bottom:40px;">
         <p class="ph-pre"><span class="tp" style="font-family:var(--mono);">$</span> <span class="kw">ls</span> <span class="str">~/projects/</span></p>
         <h1 class="ph-title">Projects</h1>
-        <p class="ph-sub">Real-world machine learning & data analysis projects — code, charts, and business insights.</p>
+        <p class="ph-sub">10 real-world machine learning, deep learning & AI projects — code, charts, and business insights.</p>
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 1: Customer Churn Prediction -->
+    <!-- PROJECT 1: Machine Learning RAG Assistant -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
                 <span class="pj-num">⭐ project_01</span>
+                <span class="pj-badge">complete</span>
+            </div>
+            <h2 class="pj-title">Machine Learning RAG Assistant<span class="pj-ext">.py</span></h2>
+            <div class="pj-tags">
+                <span class="pj-tag">Python</span>
+                <span class="pj-tag">RAG</span>
+                <span class="pj-tag">FAISS</span>
+                <span class="pj-tag">Sentence Transformers</span>
+                <span class="pj-tag">Groq LLM</span>
+                <span class="pj-tag">Streamlit</span>
+                <span class="pj-tag">LangChain</span>
+            </div>
+        </div>
+        <div class="pj-body">
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># overview</span>
+                <p>End-to-end <strong>Retrieval-Augmented Generation (RAG)</strong> application that allows users to ask questions about Machine Learning concepts using a custom knowledge base. Combines <strong>semantic search, FAISS vector retrieval, Sentence Transformer embeddings, conversational question rewriting, and Groq's LLM</strong> to generate grounded answers from the provided knowledge base. Supports <strong>conversation-aware follow-up questions, source-topic display, and out-of-knowledge-base handling</strong>.</p>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># key_insights</span>
+                <div class="dict-block">
+                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
+                    <span class="di ind"><span class="str">"retrieval"</span><span class="pun">:</span> <span class="str">"FAISS + Sentence Transformers (all-MiniLM-L6-v2)"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"llm"</span><span class="pun">:</span> <span class="str">"Groq (openai/gpt-oss-20b)"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"chunking"</span><span class="pun">:</span> <span class="str">"Structure-aware topic-based documents"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"feature"</span><span class="pun">:</span> <span class="str">"Conversational follow-up question rewriting"</span></span>
+                    <span class="di"><span class="pun">}</span></span>
+                </div>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># visual_analysis</span>
+                <div class="shots">
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="\images\rag_machine\Gemini_Generated_Image_uwukuyuwukuyuwuk.png" alt="RAG Architecture"></div>
+                        <div class="shot-cap"><span class="shot-name">rag_architecture.png</span><span class="shot-txt">Complete RAG pipeline architecture.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="\images\rag_machine\Screenshot 2026-09-05 195638.png" alt="Chat Interface"></div>
+                        <div class="shot-cap"><span class="shot-name">chat_interface.png</span><span class="shot-txt">Interactive Streamlit chat interface.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="\images\rag_machine\Screenshot 2026-09-05 200102.png" alt="Source Display"></div>
+                        <div class="shot-cap"><span class="shot-name">chat_example.png</span><span class="shot-txt">User and app interaction.</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pj-sec" style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a href="https://github.com/ATHAR-HUSSAIN-2910/machine-learning-rag" target="_blank" class="gh-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    view full project on github →
+                </a>
+                <a href="https://athars-ml-rag-application.streamlit.app/" target="_blank" class="btn btn-streamlit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    🚀 Live Demo →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PROJECT 2: Diabetes Prediction ANN -->
+    <!-- ============================================ -->
+    <div class="pj-card" style="margin-bottom:18px;">
+        <div class="pj-top">
+            <div class="pj-meta">
+                <span class="pj-num">⭐ project_02</span>
+                <span class="pj-badge">complete</span>
+            </div>
+            <h2 class="pj-title">Diabetes Prediction with ANN<span class="pj-ext">.py</span></h2>
+            <div class="pj-tags">
+                <span class="pj-tag">PyTorch</span>
+                <span class="pj-tag">ANN</span>
+                <span class="pj-tag">Optuna</span>
+                <span class="pj-tag">Scikit-learn</span>
+                <span class="pj-tag">Streamlit</span>
+                <span class="pj-tag">Pandas</span>
+            </div>
+        </div>
+        <div class="pj-body">
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># overview</span>
+                <p>End-to-end deep learning project using a <strong>PyTorch Artificial Neural Network (ANN)</strong> to predict diabetes from health-related, lifestyle, and demographic indicators. Follows a complete workflow including <strong>EDA, leakage-safe preprocessing, PyTorch Dataset/DataLoader, ANN development, Optuna hyperparameter optimization, early stopping, threshold optimization, model evaluation, artifact saving, and Streamlit deployment</strong>.</p>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># key_insights</span>
+                <div class="dict-block">
+                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
+                    <span class="di ind"><span class="str">"best_roc_auc"</span><span class="pun">:</span> <span class="str">"0.8298"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"threshold"</span><span class="pun">:</span> <span class="str">"0.40 (optimized for recall)"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"recall"</span><span class="pun">:</span> <span class="str">"89.36% at selected threshold"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"architecture"</span><span class="pun">:</span> <span class="str">"21 → 96 → 32 → 1"</span></span>
+                    <span class="di"><span class="pun">}</span></span>
+                </div>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># visual_analysis</span>
+                <div class="shots">
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/diabetes_ann/roc_curve.png" alt="ROC Curve"></div>
+                        <div class="shot-cap"><span class="shot-name">roc_curve.png</span><span class="shot-txt">ROC-AUC: 0.8298 on test set.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/diabetes_ann/confusion_matrix.png" alt="Confusion Matrix"></div>
+                        <div class="shot-cap"><span class="shot-name">confusion_matrix.png</span><span class="shot-txt">Confusion matrix at threshold 0.40.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/diabetes_ann/training_validation_loss.png" alt="Training Curves"></div>
+                        <div class="shot-cap"><span class="shot-name">training_curves.png</span><span class="shot-txt">Training & validation loss with early stopping.</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pj-sec" style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a href="https://github.com/ATHAR-HUSSAIN-2910/diabetes-ann-pytorch" target="_blank" class="gh-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    view full project on github →
+                </a>
+                <a href="https://athars-diabetes-ann-pytorch.streamlit.app/" target="_blank" class="btn btn-streamlit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    🚀 Live Demo →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PROJECT 3: CIFAR-10 CNN Classification -->
+    <!-- ============================================ -->
+    <div class="pj-card" style="margin-bottom:18px;">
+        <div class="pj-top">
+            <div class="pj-meta">
+                <span class="pj-num">⭐ project_03</span>
+                <span class="pj-badge">complete</span>
+            </div>
+            <h2 class="pj-title">CIFAR-10 CNN Classification<span class="pj-ext">.py</span></h2>
+            <div class="pj-tags">
+                <span class="pj-tag">PyTorch</span>
+                <span class="pj-tag">CNN</span>
+                <span class="pj-tag">Computer Vision</span>
+                <span class="pj-tag">Optuna</span>
+                <span class="pj-tag">Torchvision</span>
+                <span class="pj-tag">Data Augmentation</span>
+            </div>
+        </div>
+        <div class="pj-body">
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># overview</span>
+                <p>End-to-end computer vision project implementing a <strong>custom Convolutional Neural Network (CNN)</strong> for multi-class image classification on the <strong>CIFAR-10 dataset</strong> using <strong>PyTorch</strong>. Demonstrates a complete workflow including <strong>data preprocessing, augmentation, CNN architecture design, baseline training, Optuna hyperparameter optimization, final evaluation, error analysis, and model saving</strong>.</p>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># key_insights</span>
+                <div class="dict-block">
+                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
+                    <span class="di ind"><span class="str">"test_accuracy"</span><span class="pun">:</span> <span class="str">"77.22%"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"macro_f1"</span><span class="pun">:</span> <span class="str">"0.7719"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"best_class"</span><span class="pun">:</span> <span class="str">"Automobile (F1: 0.8972)"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"architecture"</span><span class="pun">:</span> <span class="str">"Custom CNN with BatchNorm & Dropout"</span></span>
+                    <span class="di"><span class="pun">}</span></span>
+                </div>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># visual_analysis</span>
+                <div class="shots">
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/cifar_cnn/training_curves.png" alt="Training Curves"></div>
+                        <div class="shot-cap"><span class="shot-name">training_curves.png</span><span class="shot-txt">Training & validation accuracy/loss curves.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/cifar_cnn/confusion_matrix.png" alt="Confusion Matrix"></div>
+                        <div class="shot-cap"><span class="shot-name">confusion_matrix.png</span><span class="shot-txt">Per-class performance analysis.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/cifar_cnn/misclassified_examples.png" alt="Misclassified Examples"></div>
+                        <div class="shot-cap"><span class="shot-name">misclassified_examples.png</span><span class="shot-txt">Visual error analysis of misclassifications.</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pj-sec">
+                <a href="https://github.com/ATHAR-HUSSAIN-2910/cifar10-cnn-pytorch" target="_blank" class="gh-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    view full project on github →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PROJECT 4: Customer Churn Prediction -->
+    <!-- ============================================ -->
+    <div class="pj-card" style="margin-bottom:18px;">
+        <div class="pj-top">
+            <div class="pj-meta">
+                <span class="pj-num">⭐ project_04</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Customer Churn Prediction<span class="pj-ext">.py</span></h2>
@@ -75,35 +275,43 @@
                 <span class="pj-sec-lbl"># visual_analysis</span>
                 <div class="shots">
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customerchurn\model_comparison.png" alt="Churn Metrics"></div>
-                        <div class="shot-cap"><span class="shot-name">churn_metrics.png</span><span class="shot-txt">Model performance metrics comparison.</span></div>
+                        <div class="shot-img-wrap"><img src="images/customerchurn/model_comparison.png" alt="Churn Metrics"></div>
+                        <div class="shot-cap"><span class="shot-name">model_comparison.png</span><span class="shot-txt">Model performance metrics comparison.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customerchurn\shap_summary_xgboost.png" alt="SHAP Summary"></div>
+                        <div class="shot-img-wrap"><img src="images/customerchurn/shap_summary_xgboost.png" alt="SHAP Summary"></div>
                         <div class="shot-cap"><span class="shot-name">shap_summary.png</span><span class="shot-txt">SHAP feature importance analysis.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customerchurn\feature_importance_xgboost.png" alt="Feature Importance"></div>
+                        <div class="shot-img-wrap"><img src="images/customerchurn/feature_importance_xgboost.png" alt="Feature Importance"></div>
                         <div class="shot-cap"><span class="shot-name">feature_importance.png</span><span class="shot-txt">Top features driving churn prediction.</span></div>
                     </div>
                 </div>
             </div>
-            <div class="pj-sec">
+            <div class="pj-sec" style="display:flex; gap:10px; flex-wrap:wrap;">
                 <a href="https://github.com/ATHAR-HUSSAIN-2910/Customer-Churn-Prediction" target="_blank" class="gh-btn">
                     <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     view full project on github →
+                </a>
+                <a href="https://athars-customer-churn-prediction.streamlit.app/" target="_blank" class="btn btn-streamlit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    🚀 Live Demo →
                 </a>
             </div>
         </div>
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 2: Customer Order SQL Project -->
+    <!-- PROJECT 5: Customer Order SQL Project -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_02</span>
+                <span class="pj-num">⭐ project_05</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Customer Order SQL Project<span class="pj-ext">.sql</span></h2>
@@ -136,16 +344,16 @@
                 <span class="pj-sec-lbl"># visual_analysis</span>
                 <div class="shots">
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customersql\Gemini_Generated_Image_glcjgfglcjgfglcj.png" alt="Schema Diagram"></div>
+                        <div class="shot-img-wrap"><img src="images/customersql/Gemini_Generated_Image_glcjgfglcjgfglcj.png" alt="Schema Diagram"></div>
                         <div class="shot-cap"><span class="shot-name">schema_diagram.png</span><span class="shot-txt">Database ER diagram design.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customersql\Screenshot 2026-07-23 183130.png" alt="SQL Query"></div>
-                        <div class="shot-cap"><span class="shot-name">sql_query.png</span><span class="shot-txt">Sample SQL query.</span></div>
+                        <div class="shot-img-wrap"><img src="images/customersql/Screenshot 2026-07-23 183130.png" alt="SQL Query"></div>
+                        <div class="shot-cap"><span class="shot-name">sql_query.png</span><span class="shot-txt">Sample SQL query with joins.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customersql\Screenshot 2026-07-23 183858.png" alt="Top 10 Customers"></div>
-                        <div class="shot-cap"><span class="shot-name">top_10_results.png</span><span class="shot-txt">Query for top 10 customers.</span></div>
+                        <div class="shot-img-wrap"><img src="images/customersql/Screenshot 2026-07-23 183858.png" alt="Top 10 Customers"></div>
+                        <div class="shot-cap"><span class="shot-name">top_10_results.png</span><span class="shot-txt">Query for top 10 customers by order value.</span></div>
                     </div>
                 </div>
             </div>
@@ -159,12 +367,79 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 3: Titanic Comparative Study -->
+    <!-- PROJECT 6: House Price Prediction -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_03</span>
+                <span class="pj-num">⭐ project_06</span>
+                <span class="pj-badge">complete</span>
+            </div>
+            <h2 class="pj-title">House Price Prediction<span class="pj-ext">.py</span></h2>
+            <div class="pj-tags">
+                <span class="pj-tag">Python</span>
+                <span class="pj-tag">Scikit-learn</span>
+                <span class="pj-tag">Pandas</span>
+                <span class="pj-tag">NumPy</span>
+                <span class="pj-tag">Streamlit</span>
+            </div>
+        </div>
+        <div class="pj-body">
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># overview</span>
+                <p>End-to-end Machine Learning project to predict residential house prices using historical housing data. Applied feature engineering, preprocessing with <strong>Pipeline and ColumnTransformer</strong>, and evaluated multiple regression models: <strong>Linear Regression, Ridge, Lasso, and Elastic Net</strong>. Used cross-validation, hyperparameter tuning, and evaluated with R², MAE, and RMSE.</p>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># key_insights</span>
+                <div class="dict-block">
+                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
+                    <span class="di ind"><span class="str">"best_model"</span><span class="pun">:</span> <span class="str">"Lasso Regression with tuned alpha"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"r2_score"</span><span class="pun">:</span> <span class="str">"0.823"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"deployment"</span><span class="pun">:</span> <span class="str">"Streamlit app for real-time predictions"</span></span>
+                    <span class="di"><span class="pun">}</span></span>
+                </div>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># visual_analysis</span>
+                <div class="shots">
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/house_price/Predicted_vs_actual.png" alt="Predicted vs Actual"></div>
+                        <div class="shot-cap"><span class="shot-name">pred_vs_actual.png</span><span class="shot-txt">Model prediction accuracy visualization.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/house_price/residual_distribution.png" alt="Residual Analysis"></div>
+                        <div class="shot-cap"><span class="shot-name">residuals.png</span><span class="shot-txt">Residual distribution analysis.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/house_price/correlational_analysis.png" alt="Correlational Heatmap"></div>
+                        <div class="shot-cap"><span class="shot-name">correlational_heatmap.png</span><span class="shot-txt">Feature correlation and importance.</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pj-sec" style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a href="https://github.com/ATHAR-HUSSAIN-2910/house_price_prediction" target="_blank" class="gh-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    view full project on github →
+                </a>
+                <a href="https://athars-house-price-prediction.streamlit.app/" target="_blank" class="btn btn-streamlit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    🚀 Live Demo →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PROJECT 7: Titanic Comparative Study -->
+    <!-- ============================================ -->
+    <div class="pj-card" style="margin-bottom:18px;">
+        <div class="pj-top">
+            <div class="pj-meta">
+                <span class="pj-num">⭐ project_07</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Titanic: Comparative Classification Study<span class="pj-ext">.py</span></h2>
@@ -196,16 +471,16 @@
                 <span class="pj-sec-lbl"># visual_analysis</span>
                 <div class="shots">
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\titanic_compare\Screenshot 2026-07-23 191219.png" alt="Model Comparison"></div>
+                        <div class="shot-img-wrap"><img src="images/titanic_compare/Screenshot 2026-07-23 191219.png" alt="Model Comparison"></div>
                         <div class="shot-cap"><span class="shot-name">model_comparison.png</span><span class="shot-txt">5 models compared side-by-side.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\titanic_compare\confusion_matrix_logistic.png" alt="Confusion Matrix"></div>
-                        <div class="shot-cap"><span class="shot-name">Confustion_matrix.png</span><span class="shot-txt">Confusion Matrix for logistic regression.</span></div>
+                        <div class="shot-img-wrap"><img src="images/titanic_compare/confusion_matrix_logistic.png" alt="Confusion Matrix"></div>
+                        <div class="shot-cap"><span class="shot-name">confusion_matrix.png</span><span class="shot-txt">Confusion Matrix for logistic regression.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\titanic_compare\roc_curve_logistic.png" alt="ROC-AUC CURVE"></div>
-                        <div class="shot-cap"><span class="shot-name">ROC-AUC.png</span><span class="shot-txt">ROC-AUC Curve for logistic regression.</span></div>
+                        <div class="shot-img-wrap"><img src="images/titanic_compare/roc_curve_logistic.png" alt="ROC-AUC CURVE"></div>
+                        <div class="shot-cap"><span class="shot-name">roc_auc.png</span><span class="shot-txt">ROC-AUC Curve for logistic regression.</span></div>
                     </div>
                 </div>
             </div>
@@ -219,12 +494,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 4: Retail Sales Data Analysis -->
+    <!-- PROJECT 8: Retail Sales Data Analysis -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_04</span>
+                <span class="pj-num">⭐ project_08</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Retail Sales Data Analysis<span class="pj-ext">.py</span></h2>
@@ -257,15 +532,15 @@
                 <span class="pj-sec-lbl"># visual_analysis</span>
                 <div class="shots">
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\retail_sale\monthly_sales_trend.png" alt="Sales Trend"></div>
+                        <div class="shot-img-wrap"><img src="images/retail_sale/monthly_sales_trend.png" alt="Sales Trend"></div>
                         <div class="shot-cap"><span class="shot-name">sales_trend.png</span><span class="shot-txt">Sales growth patterns over time.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\retail_sale\discount_vs_profit.png" alt="Discount vs Profit"></div>
+                        <div class="shot-img-wrap"><img src="images/retail_sale/discount_vs_profit.png" alt="Discount vs Profit"></div>
                         <div class="shot-cap"><span class="shot-name">discount_profit.png</span><span class="shot-txt">High discounts reduce profitability.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\retail_sale\category_sales.png" alt="Category Sales"></div>
+                        <div class="shot-img-wrap"><img src="images/retail_sale/category_sales.png" alt="Category Sales"></div>
                         <div class="shot-cap"><span class="shot-name">category_sales.png</span><span class="shot-txt">Top-performing categories identified.</span></div>
                     </div>
                 </div>
@@ -280,71 +555,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 5: House Price Prediction -->
+    <!-- PROJECT 9: Titanic Survival Prediction -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_05</span>
-                <span class="pj-badge">complete</span>
-            </div>
-            <h2 class="pj-title">House Price Prediction<span class="pj-ext">.py</span></h2>
-            <div class="pj-tags">
-                <span class="pj-tag">Python</span>
-                <span class="pj-tag">Scikit-learn</span>
-                <span class="pj-tag">Pandas</span>
-                <span class="pj-tag">NumPy</span>
-                <span class="pj-tag">Streamlit</span>
-            </div>
-        </div>
-        <div class="pj-body">
-            <div class="pj-sec">
-                <span class="pj-sec-lbl"># overview</span>
-                <p>End-to-end Machine Learning project to predict residential house prices using historical housing data. Applied feature engineering, preprocessing with <strong>Pipeline and ColumnTransformer</strong>, and evaluated multiple regression models: <strong>Linear Regression, Ridge, Lasso, and Elastic Net</strong>. Used cross-validation, hyperparameter tuning, and evaluated with R², MAE, and RMSE.</p>
-            </div>
-            <div class="pj-sec">
-                <span class="pj-sec-lbl"># key_insights</span>
-                <div class="dict-block">
-                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
-                    <span class="di ind"><span class="str">"best_model"</span><span class="pun">:</span> <span class="str">"Lasso Regression with tuned alpha"</span><span class="pun">,</span></span>
-                    <span class="di ind"><span class="str">"r2_score"</span><span class="pun">:</span> <span class="str">"0.823"</span><span class="pun">,</span></span>
-                    <span class="di ind"><span class="str">"deployment"</span><span class="pun">:</span> <span class="str">"Ready for Streamlit deployment"</span></span>
-                    <span class="di"><span class="pun">}</span></span>
-                </div>
-            </div>
-            <div class="pj-sec">
-                <span class="pj-sec-lbl"># visual_analysis</span>
-                <div class="shots">
-                    <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\house_price\Predicted_vs_actual.png" alt="Predicted vs Actual"></div>
-                        <div class="shot-cap"><span class="shot-name">pred_vs_actual.png</span><span class="shot-txt">Model prediction accuracy.</span></div>
-                    </div>
-                    <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\house_price\residual_distribution.png" alt="Residual Analysis"></div>
-                        <div class="shot-cap"><span class="shot-name">residuals.png</span><span class="shot-txt">Residual distribution analysis.</span></div>
-                    </div>
-                    <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\house_price\correlational_analysis.png" alt="Correlational Heatmap"></div>
-                        <div class="shot-cap"><span class="shot-name">Correlational_heatmap.png</span><span class="shot-txt">feature_importance_interpretation.</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pj-sec">
-                <a href="https://github.com/ATHAR-HUSSAIN-2910/house_price_prediction" target="_blank" class="gh-btn">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    view full project on github →
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================================ -->
-    <!-- PROJECT 6: Titanic Survival Prediction -->
-    <!-- ============================================ -->
-    <div class="pj-card" style="margin-bottom:18px;">
-        <div class="pj-top">
-            <div class="pj-meta">
-                <span class="pj-num">⭐ project_06</span>
+                <span class="pj-num">⭐ project_09</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Titanic Survival Prediction<span class="pj-ext">.py</span></h2>
@@ -375,15 +591,15 @@
                 <span class="pj-sec-lbl"># visual_analysis</span>
                 <div class="shots">
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\titanic\target.png" alt="Target variable distribution"></div>
-                        <div class="shot-cap"><span class="shot-name">Target.png</span><span class="shot-txt">Survival Distribution.</span></div>
+                        <div class="shot-img-wrap"><img src="images/titanic/target.png" alt="Target variable distribution"></div>
+                        <div class="shot-cap"><span class="shot-name">target.png</span><span class="shot-txt">Survival Distribution.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\titanic\confusion_matrix.png"></div>
+                        <div class="shot-img-wrap"><img src="images/titanic/confusion_matrix.png" alt="Confusion Matrix"></div>
                         <div class="shot-cap"><span class="shot-name">confusion_matrix.png</span><span class="shot-txt">Model prediction breakdown.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\titanic\roc_curve.png" alt="ROC Curve"></div>
+                        <div class="shot-img-wrap"><img src="images/titanic/roc_curve.png" alt="ROC Curve"></div>
                         <div class="shot-cap"><span class="shot-name">roc_curve.png</span><span class="shot-txt">ROC-AUC performance evaluation.</span></div>
                     </div>
                 </div>
@@ -398,12 +614,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 7: Customer Segmentation K-Means -->
+    <!-- PROJECT 10: Customer Segmentation K-Means -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_07</span>
+                <span class="pj-num">⭐ project_10</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Customer Segmentation using K-Means<span class="pj-ext">.py</span></h2>
@@ -435,15 +651,15 @@
                 <span class="pj-sec-lbl"># visual_analysis</span>
                 <div class="shots">
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customer_segment\Clusters.png" alt="K-Means Clusters"></div>
+                        <div class="shot-img-wrap"><img src="images/customer_segment/Clusters.png" alt="K-Means Clusters"></div>
                         <div class="shot-cap"><span class="shot-name">clusters.png</span><span class="shot-txt">Customer segments visualized.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customer_segment\elbow_method.png" alt="Elbow Method"></div>
+                        <div class="shot-img-wrap"><img src="images/customer_segment/elbow_method.png" alt="Elbow Method"></div>
                         <div class="shot-cap"><span class="shot-name">elbow.png</span><span class="shot-txt">Optimal k determination.</span></div>
                     </div>
                     <div class="shot">
-                        <div class="shot-img-wrap"><img src="images\customer_segment\silhouette_scores.png" alt="Silhouette Score"></div>
+                        <div class="shot-img-wrap"><img src="images/customer_segment/silhouette_scores.png" alt="Silhouette Score"></div>
                         <div class="shot-cap"><span class="shot-name">silhouette.png</span><span class="shot-txt">Cluster quality evaluation.</span></div>
                     </div>
                 </div>

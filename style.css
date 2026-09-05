@@ -24,6 +24,7 @@
     --accent:   #5B17B8;
     --accent-2: #1A56C4;
     --green:    #1A7A3C;
+    --streamlit: #FF4B4B;
 
     --mono: 'JetBrains Mono', 'Fira Code', monospace;
     --sans: 'Geist', system-ui, sans-serif;
@@ -278,6 +279,31 @@ nav ul li a.active {
     border-color: var(--fn);
 }
 .btn-out:hover { background: #1440A0; border-color: #1440A0; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(26,86,196,0.25); }
+
+/* ── STREAMLIT BUTTON ───────────────────────────────────── */
+.btn-streamlit {
+    background: var(--streamlit);
+    color: #fff;
+    border-color: var(--streamlit);
+    padding: 8px 17px;
+    font-size: 0.79rem;
+    font-weight: 600;
+    border-radius: var(--r2);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--t);
+    font-family: var(--mono);
+}
+
+.btn-streamlit:hover {
+    background: #E04040;
+    border-color: #E04040;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255,75,75,0.35);
+    color: #fff;
+}
 
 /* ── RESUME BUTTON ───────────────────────────────────────── */
 .btn-resume {
@@ -1173,6 +1199,14 @@ footer {
         width: 100%;
         justify-content: center;
     }
+
+    /* ── Streamlit Button Mobile ── */
+    .btn-streamlit {
+        font-size: 0.72rem;
+        padding: 8px 14px;
+        width: 100%;
+        justify-content: center;
+    }
     
     /* ── Project Images - Mobile ── */
     .shots {
@@ -1216,6 +1250,18 @@ footer {
         border-radius: 6px !important;
         color: var(--accent) !important;
         letter-spacing: 0.05em !important;
+    }
+
+    /* ── Project action buttons - stack vertically ── */
+    .pj-sec[style*="display:flex"] {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+
+    .pj-sec[style*="display:flex"] .gh-btn,
+    .pj-sec[style*="display:flex"] .btn-streamlit {
+        width: 100% !important;
+        justify-content: center !important;
     }
 }
 
@@ -1279,6 +1325,12 @@ footer {
     .btn-resume {
         padding: 8px 18px;
     }
+
+    /* ── Streamlit Button Tablet ── */
+    .btn-streamlit {
+        padding: 8px 14px;
+        font-size: 0.75rem;
+    }
 }
 
 /* ── DESKTOP (1025px+) ── */
@@ -1317,6 +1369,10 @@ footer {
     .resume-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .btn-streamlit:hover {
+        transform: translateY(-1px);
     }
 }
 
@@ -1389,6 +1445,11 @@ footer {
     .pj-num {
         font-size: 1rem !important;
         padding: 3px 14px !important;
+    }
+
+    .btn-streamlit {
+        font-size: 0.68rem;
+        padding: 6px 12px;
     }
 }
 
