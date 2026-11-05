@@ -33,16 +33,88 @@
     <div class="ph" style="margin-bottom:40px;">
         <p class="ph-pre"><span class="tp" style="font-family:var(--mono);">$</span> <span class="kw">ls</span> <span class="str">~/projects/</span></p>
         <h1 class="ph-title">Projects</h1>
-        <p class="ph-sub">10 real-world machine learning, deep learning & AI projects — code, charts, and business insights.</p>
+        <p class="ph-sub">11 real-world machine learning, deep learning, RAG & agentic AI projects — code, charts, and business insights.</p>
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 1: Machine Learning RAG Assistant -->
+    <!-- PROJECT 1: ShopAssist AI Agent -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
                 <span class="pj-num">⭐ project_01</span>
+                <span class="pj-badge">complete</span>
+            </div>
+            <h2 class="pj-title">ShopAssist AI: Agentic Customer Support<span class="pj-ext">.py</span></h2>
+            <div class="pj-tags">
+                <span class="pj-tag">Python</span>
+                <span class="pj-tag">LangGraph</span>
+                <span class="pj-tag">LangChain</span>
+                <span class="pj-tag">RAG</span>
+                <span class="pj-tag">PostgreSQL</span>
+                <span class="pj-tag">FAISS</span>
+                <span class="pj-tag">Groq</span>
+                <span class="pj-tag">Streamlit</span>
+            </div>
+        </div>
+        <div class="pj-body">
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># overview</span>
+                <p>An advanced <strong>AI-powered customer support agent</strong> built with <strong>LangGraph, LangChain, and Groq</strong>. Unlike a standard chatbot, this is a <strong>stateful agentic workflow</strong> that classifies customer intent, retrieves company policies via <strong>RAG</strong>, interacts with a <strong>PostgreSQL order database</strong>, maintains persistent conversation memory, and escalates unsupported requests to a human. The LLM acts as a single component within a larger system, while business rules and safety checks are strictly enforced in Python.</p>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># key_insights</span>
+                <div class="dict-block">
+                    <span class="di"><span class="attr">insights</span><span class="pun"> = {</span></span>
+                    <span class="di ind"><span class="str">"architecture"</span><span class="pun">:</span> <span class="str">"Stateful LangGraph agentic workflow"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"retrieval"</span><span class="pun">:</span> <span class="str">"FAISS + Sentence Transformers (policy docs)"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"memory"</span><span class="pun">:</span> <span class="str">"PostgreSQL checkpointer for multi-turn context"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"safety"</span><span class="pun">:</span> <span class="str">"RAG threshold, conditional routing, confirmations"</span><span class="pun">,</span></span>
+                    <span class="di ind"><span class="str">"evaluation"</span><span class="pun">:</span> <span class="str">"28-case suite with 100% pass rate"</span></span>
+                    <span class="di"><span class="pun">}</span></span>
+                </div>
+            </div>
+            <div class="pj-sec">
+                <span class="pj-sec-lbl"># visual_analysis</span>
+                <div class="shots">
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/shopassist/architecture.png" alt="LangGraph Architecture"></div>
+                        <div class="shot-cap"><span class="shot-name">architecture.png</span><span class="shot-txt">Stateful LangGraph workflow and routing.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/shopassist/chat_interface.png" alt="Chat Interface"></div>
+                        <div class="shot-cap"><span class="shot-name">chat_interface.png</span><span class="shot-txt">Streamlit UI with action chips and memory.</span></div>
+                    </div>
+                    <div class="shot">
+                        <div class="shot-img-wrap"><img src="images/shopassist/order_tracking.png" alt="Order Tracking"></div>
+                        <div class="shot-cap"><span class="shot-name">order_tracking.png</span><span class="shot-txt">Database tool execution for order status.</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pj-sec" style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a href="https://github.com/ATHAR-HUSSAIN-2910/Shop-assist-ai-agent" target="_blank" class="gh-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    view full project on github →
+                </a>
+                <a href="https://athars-shop-assist-ai-agent.streamlit.app/" target="_blank" class="btn btn-streamlit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    🚀 Live Demo →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PROJECT 2: Machine Learning RAG Assistant -->
+    <!-- ============================================ -->
+    <div class="pj-card" style="margin-bottom:18px;">
+        <div class="pj-top">
+            <div class="pj-meta">
+                <span class="pj-num">⭐ project_02</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Machine Learning RAG Assistant<span class="pj-ext">.py</span></h2>
@@ -107,12 +179,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 2: Diabetes Prediction ANN -->
+    <!-- PROJECT 3: Diabetes Prediction ANN -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_02</span>
+                <span class="pj-num">⭐ project_03</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Diabetes Prediction with ANN<span class="pj-ext">.py</span></h2>
@@ -176,12 +248,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 3: CIFAR-10 CNN Classification -->
+    <!-- PROJECT 4: CIFAR-10 CNN Classification -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_03</span>
+                <span class="pj-num">⭐ project_04</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">CIFAR-10 CNN Classification<span class="pj-ext">.py</span></h2>
@@ -237,12 +309,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 4: Customer Churn Prediction -->
+    <!-- PROJECT 5: Customer Churn Prediction -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_04</span>
+                <span class="pj-num">⭐ project_05</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Customer Churn Prediction<span class="pj-ext">.py</span></h2>
@@ -306,12 +378,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 5: Customer Order SQL Project -->
+    <!-- PROJECT 6: Customer Order SQL Project -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_05</span>
+                <span class="pj-num">⭐ project_06</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Customer Order SQL Project<span class="pj-ext">.sql</span></h2>
@@ -367,12 +439,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 6: House Price Prediction -->
+    <!-- PROJECT 7: House Price Prediction -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_06</span>
+                <span class="pj-num">⭐ project_07</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">House Price Prediction<span class="pj-ext">.py</span></h2>
@@ -434,12 +506,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 7: Titanic Comparative Study -->
+    <!-- PROJECT 8: Titanic Comparative Study -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_07</span>
+                <span class="pj-num">⭐ project_08</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Titanic: Comparative Classification Study<span class="pj-ext">.py</span></h2>
@@ -494,12 +566,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 8: Retail Sales Data Analysis -->
+    <!-- PROJECT 9: Retail Sales Data Analysis -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_08</span>
+                <span class="pj-num">⭐ project_09</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Retail Sales Data Analysis<span class="pj-ext">.py</span></h2>
@@ -555,12 +627,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 9: Titanic Survival Prediction -->
+    <!-- PROJECT 10: Titanic Survival Prediction -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_09</span>
+                <span class="pj-num">⭐ project_10</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Titanic Survival Prediction<span class="pj-ext">.py</span></h2>
@@ -614,12 +686,12 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- PROJECT 10: Customer Segmentation K-Means -->
+    <!-- PROJECT 11: Customer Segmentation K-Means -->
     <!-- ============================================ -->
     <div class="pj-card" style="margin-bottom:18px;">
         <div class="pj-top">
             <div class="pj-meta">
-                <span class="pj-num">⭐ project_10</span>
+                <span class="pj-num">⭐ project_11</span>
                 <span class="pj-badge">complete</span>
             </div>
             <h2 class="pj-title">Customer Segmentation using K-Means<span class="pj-ext">.py</span></h2>
